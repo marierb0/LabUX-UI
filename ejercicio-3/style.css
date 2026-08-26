@@ -1,0 +1,109 @@
+/* Indice de estilos
+
+0. Generales / colores
+1. Tipografías
+
+*/
+
+/* 0. Generales*/ colores */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --color-principal: rgb(36, 182, 231);
+    --color-acento: rgb(155, 68, 125);
+    --color-tercer: rgb(91, 168, 99);
+    --color-texto: rgb(27, 25, 25);
+
+}
+.elements-row{
+    display:flex;
+
+}
+/* 1. Tipografías */
+.titulo-principal {
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: var(--color-principal);
+    font-size: 30px;
+}
+
+.titulo-secundario {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-principal);
+    font-size: 25px;
+
+}
+.parrafo {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-principal);
+    font-size: 14px;
+    color: var(--color-texto);
+
+}
+.texto-oculto{
+    display: none;
+}
+#cabecera-principal{
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* borde: grosor tipo color;*/
+    border-bottom: 3px solid var(--color-principal)
+
+}
+/* 3. Enlaces / botones */
+.boton-principal{
+    /* fuente */
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-principal);
+    font-size: 20px;
+    /*quito la linea inferior*/
+    text-decoration: none;
+    /*asigno cuerpo por medio del relleno*/
+    padding: 8px 15px 8px 15px;
+    /* animacion del paso del mouse*/
+    transition: all linear 0.3s;
+
+    
+}
+
+.boton-principal:hover{
+    color:rgb(243, 247, 247);
+    background-color: var(--color-principal);
+    /* redondeear border*/
+    border-radius: 5px;
+}
+/* area destacada*/
+.area-destacada
+
+@media only screen and (max-width: 600px) {
+    /* 2.header / cabecera*/
+    #cabecera-principal {
+        flex-direction: column;
+    }
+    /*3. Enlaces / botones */
+    .boton-principal{
+        /* se comportara como un bloque*/
+        display: block;
+        /*ancho*/
+        width: 96%;
+        /*margen*/
+        margin: 5px 2% 5px 2%;
+        /*alinear texto*/
+        text-align: center;
+        border-bottom: 1px solid var(--color-principal);
+
+    }
+}
