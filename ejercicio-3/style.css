@@ -18,6 +18,11 @@
     --color-texto: rgb(27, 25, 25);
 
 }
+
+img {
+    width: 100% ;
+}
+
 .elements-row{
     display:flex;
 
@@ -29,6 +34,7 @@
     font-style: normal;
     color: var(--color-principal);
     font-size: 30px;
+    text-align: center;
 }
 
 .titulo-secundario {
@@ -39,6 +45,15 @@
     font-size: 25px;
 
 }
+.titulo-experiencias{
+    font-family: "Prompt", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    color: rgb(243, 247, 247);
+    font-size: 30px;
+    text-align: center;
+}
+
 .parrafo {
     font-family: "Prompt", sans-serif;
     font-weight: 400;
@@ -85,10 +100,63 @@
     /* redondeear border*/
     border-radius: 5px;
 }
+.boton-ver-más {
+    font-family: "Prompt", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:rgb(243, 247, 247);
+    font-size: 14px;
+    /*quito la linea inferior*/
+    text-decoration: none;
+    /*asigno cuerpo por medio del relleno*/
+    padding: 8px 15px 8px 15px;
+    /* animacion del paso del mouse*/
+    transition: all linear 0.3s;
+    background-color: var(--color-principal);
+}
+.boton-ver-más:hover{
+    color:var(--color-principal);
+    background-color: rgb(243, 247, 247);
+    /* redondeear border*/
+    border-radius: 10%;
+    padding: 6px 10px;
+}
+
 /* area destacada*/
-.area-destacada
+#area-destacadas{
+    /*relleno*/
+    padding: 100px 0;
+    background: rgb(251, 250, 250);
+}
+
+#area-experiencia video{
+    margin: 30px 5%;
+}
+.articulo-idex{
+    /*relleno: top right bottom left */
+    padding:20px;
+
+}
+.articulo-idex *{ 
+    /*margen: top right bottom left */
+    margin:0 0 10px 0;
+
+}
+
+#area-de-experiencias {
+    padding: 100px;
+    background: url(assets/FONDOBUENOSAIRES.png) center center no-repeat rgb(27, 25, 25);
+    background-size: cover;
+
+}
 
 @media only screen and (max-width: 600px) {
+
+    /*0. Generales/colores*/
+    .elements-row {
+        flex-direction:column;
+        align-items: center;
+    }
     /* 2.header / cabecera*/
     #cabecera-principal {
         flex-direction: column;
