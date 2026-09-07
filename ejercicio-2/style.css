@@ -1,0 +1,76 @@
+/*Todas las etiquetas - Universal*/
+*{
+    /*márgenes*/
+    margin: 0;
+    /*relleno (margen interna)*/
+    padding: 0;
+    /*evita sumar anchos al relleno*/
+    box-sizing: border-box;
+
+}
+
+/*Asignar estilo a los contenedores principales*/
+body{
+    /* Fondo URL top Left*/
+    background: url(Assets/imagen-back.jpg) 0 0 no-repeat;
+    background-size: cover;
+    /*Manejo de color
+        -Hexadecimal: #000;
+        -Nombre de color: black;
+        -RGB: rgb (0,0,0);
+        -rgba: rgba(0,0,0,1); {el 1 es para evitar la transparencia, si se quiere transparencia se pone el porcentaje}
+        -hsl*/
+}
+
+main{
+    /* fondo con alpha al 70% */
+    background: rgba(0, 0, 0, 0.7);
+    /* ancho */
+    width: 100%;
+    max-width: 650px;
+    /*Centrar el contenido*/
+    
+    margin: 0 auto 0 auto;
+    /* Relleno: Top Right Bottom Left */
+    padding: 20px;
+}
+
+/*Estilos títulos*/
+h1{
+    /*Color de fuente*/
+    color: rgb(207, 24, 152);
+    /*Tamaño de fuente*/
+    font-size: 100px;
+    /*Cambio de familia tipográfica*/
+    font-family: "Dokdo", system-ui;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2{
+    color: rgb(46, 171, 238);
+    font-size: 50px;
+    font-family: "Dongle", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 10px 0 10px 0;
+}
+
+/*Estilo de párrafos*/
+.parrafo-pink{
+    color: rgb(250, 250, 248);
+    font-size: 14px;
+    /*Altura de línea*/
+    line-height: 24px;
+    /*justificación de texto*/
+    text-align: justify;
+    font-family: "Gelasio", serif;
+    font-optical-sizing: auto;
+    font-weight: 400px;
+    font-style: normal;
+}
+
+/*Imágenes*/
+img{
+    width: 100%;
+}
